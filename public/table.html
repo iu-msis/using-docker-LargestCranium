@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Fav Books</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css\stylesheet.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark spicynav">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutme.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="table.html">LEARN THINGS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- Taken from Bootstrap -->
+<a href="img/GuyonFire.jpg">
+<img src="img/GuyonFire.jpg" alt="Award Winning Masterpiece" class="img-thumbnail">
+</a>
+<p><cite>Guy on Fire</cite> Credit to: https://www.amazon.com/Guy-Fire-Recipes-Adventures-Outdoor/dp/0062469959 </p>
+  <table id="books" class="table">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Author(s)</th>
+        <th scope="col">Year Published</th>
+        <th scope="col">Publisher</th>
+        <th scope="col">Page Count</th>
+        <th scope="col">MSRP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Harry Potter and The Prisoner of Flavortown</th>
+        <td>G. Fieri</td>
+        <td>1900</td>
+        <td>Righteous Printing</td>
+        <td>876</td>
+        <td>$39.99</td>
+      </tr>
+      <tr>
+        <th scope="row">Of Mice and Mayors of Flavortown</th>
+        <td>Guy F.</td>
+        <td>1984</td>
+        <td>Gravy Train Books</td>
+        <td>1</td>
+        <td>$888.88</td>
+      </tr>
+      <tr>
+        <th scope="row">The Count of Flavortown</th>
+        <td>Bee S. Knees</td>
+        <td>2015</td>
+        <td>Shama Lama Ding Dong Works</td>
+        <td>808,080</td>
+        <td>$1</td>
+      </tr>
+      <tr>
+        <th scope="row">A Tale of Two Flavortowns</th>
+        <td>Funk A. Licious</td>
+        <td>2020</td>
+        <td>Winner Winner Gaspacho Dinner Press</td>
+        <td>101</td>
+        <td>23 Jumbo Hot Wings</td>
+      </tr>
+    </tbody>
+  </table>
+<!-- Taken from Bootstrap -->
+  <form class="needs-validation" novalidate>
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationTooltip01">Title</label>
+        <input type="text" class="form-control" id="validationTooltip01" placeholder="What the book is called" value="" required>
+        <div class="valid-tooltip">
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationTooltip02">Author</label>
+        <input type="text" class="form-control" id="validationTooltip02" placeholder="Being that wrote the words" value="" required>
+        <div class="valid-tooltip">
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationTooltipUsername">Year Published</label>
+        <input type="number" class="form-control" id="validationTooltipUsername" placeholder="Year the book was printed" aria-describedby="validationTooltipUsernamePrepend" required>
+        <div class="invalid-tooltip">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationTooltip03">Publisher</label>
+        <input type="text" class="form-control" id="validationTooltip03" placeholder="Publisher" required>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationTooltip04">Page Count</label>
+        <input type="number" class="form-control" id="validationTooltip04" placeholder="Number of Pages in the book" required>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationTooltip05">MSRP</label>
+        <input type="number" class="form-control" id="validationTooltip05" placeholder="Cost in USD" required>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </form>
+<!-- Taken from Bootstrap -->
+</body>
+
+</html>
