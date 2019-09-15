@@ -1,7 +1,8 @@
 <!doctype html>
+<meta charset="utf-8"/>
 <html>
 <head>
-  <title>About Guy</title>
+  <title>Random People</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
@@ -27,7 +28,7 @@
   </nav>
   <!-- Taken from Bootstrap -->
 
-  <div id="randomUser" class="container">
+  <div id="randomUser" v-if="randos.name" class="container">
   <h1><span style="text-transform:capitalize">{{ randos.name.first }} {{ randos.name.last }}</span><br></h1>
   <img v-bind:src="randos.picture.large" width="250"><br>
   <span>Nationality: {{ randos.nat }}</span><br>
@@ -37,9 +38,10 @@
   <A class="emailaddy" v-bind:href="`mailto:${randos.email}`">{{ randos.email }}</A>
   <!-- Consulted Alex Braunscheidel for formation of random user data -->
   <!-- taken from https://forum.vuejs.org/t/how-to-set-up-a-mailto-href-vue-2-0/2001/3 Phanam's answer -->
-  <div class="row">
-      <div class="col">
+    <div class="row">
+        <div class="col">
         </div>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

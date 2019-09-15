@@ -8,7 +8,6 @@ var randomApp = new Vue({
       fetch('https://randomuser.me/api/')
       .then( response => response.json() )
       .then( json => {randomApp.randos = json.results[0]})
-
       ;
 
       // Means the same at this
