@@ -73,3 +73,5 @@ The ideal script "just works", perhaps with simply adding only a class to your t
 
 # Submit
 Submit the URL to your GitHub repository on Canvas. _**Link directly to the table page.**_ It will help if you name that file `table.html`.
+
+      - ./public:/srv/app/public

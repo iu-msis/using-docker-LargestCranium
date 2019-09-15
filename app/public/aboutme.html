@@ -27,20 +27,23 @@
   </nav>
   <!-- Taken from Bootstrap -->
 
-  <div class="container" style="margin-top:30px;">
-  <h1>Guy Fieri</h1>
+  <div id="randomUser" class="container">
+  <h1><span>{{ randos.name.first }} {{ randos.name.last }}</span><br></h1>
+  <img v-bind:src="randos.picture.large" width="250">
+  <span>Nationality: {{ randos.nat }}</span><br>
+  <span>Birthdate: {{ randos.dob.date }}</span><br>
+  <span>Age: {{ randos.dob.age }}</span><br>
+  <span>Email Address: {{ randos.email }}</span>
   <div class="row">
       <div class="col">
           <p>
             <solid>Occupation: Mayor of Flavortown</solid>
-          </p>
-          <a href="img/Guy.jpg">
-          <img src="img/Guy.jpg" alt="The Mayor of Flavortown enthusiastically cheering" class="img-thumbnail">
-          </a>
-          <p><cite>Guy Fieri</cite> credit to: https://www.ocregister.com/2010/04/15/qa-guy-fieri-loves-oc-fans-dives/</p>
+          </p> -->
+
+          <!-- <p><cite>Guy Fieri</cite> credit to: https://www.ocregister.com/2010/04/15/qa-guy-fieri-loves-oc-fans-dives/</p>
         </div>
 <!-- Taken from Bootstrap -->
-      <div class="col">
+      <!-- <div class="col">
         <br>
         <br>
         <br>
@@ -58,8 +61,11 @@
         <h4>Contact</h4>
           <A class="emailaddy" HREF=mailto:gpjung@iu.edu>flavortownmayor@thebomb.com</A>
           <!-- Taken from http://www.networksolutions.com/support/how-to-create-an-html-mailto-link/ --></div>
-    </div>
+    <!-- </div>  -->
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/random.app.js"></script>
 
 </body>
 </html>
