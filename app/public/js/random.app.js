@@ -15,9 +15,15 @@ var randomApp = new Vue({
       // .then(function(response) {return response.json()})
       // .then(function(json) {waitingApp.people = json});
 
+    },
+      handleCreateBook(book) {
+      this.fetchRando();
+      // TODO: Pass this data to another Vue app
+      console.log(book);
     }
   },
+
   created() {
     this.fetchRando();
   }
-})
+});
